@@ -11,7 +11,7 @@ export const createMeetups = async (req, res) => {
     }
 }
 
-export const getAllMeetUps = async (rq, res) => {
+export const getAllMeetUps = async (req, res) => {
     try{
         return res.status(200).json({meetups: await Meetup.find({})})
     }catch (e){
