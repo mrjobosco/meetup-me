@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index"
+    "start": "node index"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,9 @@
     "nodemon": "^1.12.1"
   },
   "engines": {
-    "node" : "8.4.0"
+    "node": "8.4.0"
+  },
+  "devDependencies": {
+    "eslint-config-equimper": "^2.2.1"
   }
 }

@@ -1,4 +1,5 @@
-import {MeetupRoutes} from './modules'
+import {GroupRoutes, MeetupRoutes} from './modules'
+
 import dbConfig from './config/db'
 import express from 'express'
 import middlewareConfig from './config/middlewares'
@@ -11,7 +12,7 @@ dbConfig()
 // Middleware
 middlewareConfig(app)
 
-app.use('/api', [MeetupRoutes])
+app.use('/api', [MeetupRoutes, GroupRoutes])
 
 const PORT = process.env.PORT || 3000
 
